@@ -1,0 +1,33 @@
+body {
+    margin: 0%;
+}
+header{
+    width: 32%;
+    margin: 0 auto;
+    background-color: white;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    position: absolute;
+}
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+}
+nav a {
+    margin: 0%;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    float: left;
+}
+#ploegen {
+    background-image: url("resources/depositphotos_52470805-stockafbeelding-mensen-houden-van-vlaggen-van.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1080px;
+
+}
