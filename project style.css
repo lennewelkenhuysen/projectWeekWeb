@@ -74,9 +74,14 @@ footer{
 nav span {
     margin-top: 30px;
 }
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 #map {
-    width:800px;
-    height:800px;
+    width: 100%;
+    height: 100%;
     background:yellow;
     float: left;
 }
