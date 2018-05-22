@@ -8,6 +8,7 @@ header{
     border-bottom-left-radius: 55px;
     border-bottom-right-radius: 55px;
     position: absolute;
+    margin-left: 35%;
 }
 img{
     display: block;
@@ -22,6 +23,7 @@ nav a {
     text-align: center;
     height: 100%;
     float: left;
+
 }
 #ploegen {
     background-image: url("resources/depositphotos_52470805-stockafbeelding-mensen-houden-van-vlaggen-van.jpg");

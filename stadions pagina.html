@@ -11,15 +11,14 @@
 
 <script>
     function myMap() {
-        var myLatLng = {lat: 50.938241299999994, long: 5.347872};
+
         var mapOptions = {
             center: new google.maps.LatLng(50.938241299999994, 5.347872),
             zoom: 16,
             mapTypeId: google.maps.MapTypeId.HYBRID
-
         }
 
-
+        var myLatLng = {lat: 50.938241299999994, long: 5.347872};
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
         var marker = new google.maps.Marker({
             position: myLatLng,
