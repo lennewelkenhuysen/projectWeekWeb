@@ -31,3 +31,22 @@ nav a {
     height: 1080px;
 
 }
+nav span {
+    margin-top: 30px;
+}
+#map {
+    width:800px;
+    height:800px;
+    background:yellow;
+    float: left;
+}
+dialog {
+    display: none;
+    position: absolute;
+    width: 25%;
+    float: left;
+}
+dialog img {
+    width: 40%;
+    float: left;
+}
