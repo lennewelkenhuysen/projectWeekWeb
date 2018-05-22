@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stadions pagina</title>
+</head>
+<body>
+<h1>My First Google Map</h1>
+
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+    function myMap() {
+        var myLatLng = {lat: 50.938241299999994, long: 5.347872};
+        var mapOptions = {
+            center: new google.maps.LatLng(50.938241299999994, 5.347872),
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+
+        }
+
+
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            icon: 'resources/location-158934_960_720.png'
+        });
+
+    }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl8pFeu7lOS6eaL_GmIjik0Oepp8i7r-M&callback=myMap"></script>
+</body>
+</html>
