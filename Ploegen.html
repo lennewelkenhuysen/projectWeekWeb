@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ploegen</title>
+    <link rel="stylesheet" href="Ploegen_style.css">
+</head>
+<body>
+<header>
+    <img src="resources/logo_wk_2018.png"/>
+</header>
+
+<div id="info">
+    <label for="TeamName" id="NaamLabel">Naam:</label>
+    <input type="text" placeholder="Team name" id="TeamName">
+    <br/>
+    <label for="ShortCode" id="ShortcodeLabel">shortcode:</label>
+    <input type="text" id="ShortCode" placeholder="Team shortcode">
+    <br/>
+    <label for="Beschrijving" id="beschrijvingLabel">Beschrijving</label>
+    <input type="text" id="Beschrijving" placeholder="Team description">
+    <br/>
+    <input type="button" value="Toevoegen" id="Button">
+</div>
+<main id="landen"></main>
+<script>
+    document.getElementById("Button").addEventListener("click",ButtonClick);
+    function ButtonClick(){
+        let TeamName = document.getElementById("TeamName").value;
+        let ShortCode = document.getElementById("ShortCode").value;
+        let Beschrijving = document.getElementById("Beschrijving").value;
+        let image = document.createElement("img");
+        switch(ShortCode){
+            case "arg":
+                image.src="resources/landen/arg.png"
+                break;
+            case "aus":
+                image.src = "resources/landen/aus.png"
+                break;
+            case "bel":
+                image.src = "resources/landen/bel.png"
+                break;
+            case "bra":
+                image.src = "resources/landen/bra.png"
+                break;
+            case "col":
+                image.src = "resources/landen/col.png"
+                break;
+            case "crc":
+                image.src = "resources/landen/crc.png"
+                break;
+            case "cro":
+                image.src = "resources/landen/cro.png"
+                break;
+            case "den":
+                image.src = "resources/landen/den.png"
+                break;
+            case "egy":
+                image.src = "resources/landen/egy.png"
+                break;
+            case "eng":
+                image.src = "resources/landen/eng.png"
+                break;
+            case "esp":
+                image.src = "resources/landen/esp.png"
+                break;
+            case "fra":
+                image.src = "resources/landen/fra.png"
+                break;
+            case "ger":
+                image.src = "resources/landen/ger.png"
+                break;
+            case "irn":
+                image.src = "resources/landen/irn.png"
+                break;
+            case "isl":
+                image.src = "resources/landen/isl.png"
+                break;
+            case "jap":
+                image.src = "resources/landen/jap.png"
+                break;
+            case "kor":
+                image.src = "resources/landen/kor.png"
+                break;
+            case "kro":
+                image.src = "resources/landen/kro.png"
+                break;
+            case "mex":
+                image.src = "resources/landen/mex.png"
+                break;
+            case "mor":
+                image.src = "resources/landen/mor.png"
+                break;
+            case "nig":
+                image.src = "resources/landen/nig.png"
+                break;
+            case "plan":
+                image.src = "resources/landen/plan.png"
+                break;
+            case "per":
+                image.src = "resources/landen/per.png"
+                break;
+            case "pol":
+                image.src = "resources/landen/pol.png"
+                break;
+            case "por":
+                image.src = "resources/landen/por.png"
+                break;
+            case "rus":
+                image.src = "resources/landen/rus.png"
+                break;
+            case "sar":
+                image.src = "resources/landen/sar.png"
+                break;
+            case "sen":
+                image.src = "resources/landen/sen.png"
+                break;
+            case "srb":
+                image.src = "resources/landen/srb.png"
+                break;
+            case "sui":
+                image.src = "resources/landen/sui.png"
+                break;
+            case "swe":
+                image.src = "resources/landen/swe.png"
+                break;
+            case "uru":
+                image.src = "resources/landen/uru.png"
+                break;
+            default:
+               alert("foute ingave")
+        }
+        let div = document.createElement("div");
+        div.appendChild(image);
+        div.innerHTML += TeamName;
+        div.innerHTML += "<br/>";
+        div.innerHTML += Beschrijving;
+        document.getElementById("landen").appendChild(div);
+    }
+</script>
+</body>
+</html>
