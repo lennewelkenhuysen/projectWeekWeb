@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    margin:  0%;
+    background-color: blue;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+}
+header img{
+    margin-right: 10%;
+    margin-left: auto;
+    width: 30%;
+    float: right;
+}
+
+#info {
+    float: left;
+    width: 20%;
+    margin-top: 15%;
+    border: 1px solid black;
+}
+#info label,input{
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+#landen image{
+    float: left;
+    width: 15%;
+}
