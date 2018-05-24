@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simulatie</title>
+    <link rel="stylesheet" href="simulatie stylesheet.css">
+    <script src="resources/poules/poules.js"></script>
+
+</head>
+<body>
+<header id="hoofdding">
+    <img src="resources/logo_wk_2018.png"/>
+</header>
+
+<div id="leftpanel">
+   <div id="pouleA">
+        <header>
+            <h3>Poule A</h3>
+        </header>
+       <div>
+           <label class="leeg">hey </label> <label class="hulp">1  2</label> <br>
+           <label for="egypte1" id="egypte1label">Egypte</label> <input type="radio" name="pouleA1" id="egypte1"> <input type="radio" name="pouleA2" id="egypte2"> <br>
+           <label for="rusland1" id="rusland1label">Rusland</label> <input type="radio" name="pouleA1" id="rusland1"> <input type="radio" name="pouleA2" id="rusland2"> <br>
+           <label for="saudi1" id="saudilabel">Saudi</label> <input type="radio" name="pouleA1" id="saudi1"> <input type="radio" name="pouleA2" id="saudi2"> <br>
+           <label for="uruguai1" id="uruguailabel">Uruguai</label> <input type="radio" name="pouleA1" id="uruguai1"> <input type="radio" name="pouleA2" id="uruguai2"> <br>
+       </div>
+   </div>
+
+    <div id="pouleB">
+        <header>
+            <h3>Poule B</h3>
+        </header>
+        <div>
+            <label class="leeg">hey </label> <label class="hulp">1  2</label> <br>
+            <label for="iran1" id="iranlabel">Egypte</label> <input type="radio" name="pouleB1" id="iran1"> <input type="radio" name="pouleB2" id="iran2"> <br>
+            <label for="marokko1" id="marokkolabel">Rusland</label> <input type="radio" name="pouleB1" id="marokko1"> <input type="radio" name="pouleB2" id="marokko2"> <br>
+            <label for="portugal1" id="portugallabel">Saudi</label> <input type="radio" name="pouleB1" id="portugal1"> <input type="radio" name="pouleB2" id="portugal2"> <br>
+            <label for="spanje1" id="spanjelabel">Uruguai</label> <input type="radio" name="pouleB1" id="spanje1"> <input type="radio" name="pouleB2" id="spanje2"> <br>
+        </div>
+    </div>
+</div>
+<main id="groepen"></main>
+
+<div id="rightpanel">
+
+</div>
+
+<script>
+
+    for(let p in poules) {
+        let poule = poules[p];
+        let pouleDiv = document.createElement("div");
+
+        for(let i in poule) {
+            let land = poule[i];
+            document.createElement("label");
+            pouleDiv.appendChild(land.land);
+        }
+        document.getElementById("leftpanel").appendChild(pouleDiv);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+#hoofdding {
+    width: 100%;
+    text-align: center;
+}
+#hoofdding img {
+    width: 25%;
+
+}
+label, input {
+    float: left;
+}
+#leftpanel, #rightpanel {
+    width: 50%;
+}
+.hulp {
+    margin-left: 70px;
+}
+.leeg {
+    visibility: hidden;
+    width: 70px;
+}
+#egypte1label, #rusland1label, #saudilabel, #uruguailabel {
+    width: 60px;
+}
+#pouleA, #pouleB {
+    border: 2px solid black;
+    width: 25%;
+    float: left;
+}
+#pouleA header, #pouleB header {
+    background-color: lightskyblue;
+    text-align: center;
+}
