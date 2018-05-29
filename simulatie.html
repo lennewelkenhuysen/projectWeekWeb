@@ -53,8 +53,13 @@
 
         for(let i in poule) {
             let land = poule[i];
-            document.createElement("label");
-            pouleDiv.appendChild(land.land);
+            let label = document.createElement("label");
+            label = land.land;
+            pouleDiv.appendChild(label);
+            let radiobtton = document.createElement("radiobutton");
+            pouleDiv.appendChild(radiobtton);
+            pouleDiv.appendChild(radiobtton);
+
         }
         document.getElementById("leftpanel").appendChild(pouleDiv);
     }
